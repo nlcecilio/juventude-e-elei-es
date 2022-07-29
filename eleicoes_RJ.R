@@ -1,9 +1,6 @@
-install.packages("ggplot2")
 install.packages("dplyr")
-install.packages("electionsBR")
 
 library(dplyr)
-library(electionsBR)
 
 eleicao_RJ <- read.csv("C:/Users/03283108/Documents/votacao_secao_2020_RJ.csv", header=TRUE, sep=";")
 View(eleicao_RJ)
@@ -45,11 +42,7 @@ vereador_teste2 <- vereadores_RJ %>%
   summarise(contagem=max(QT_VOTOS))
 View(vereador_teste2)
 
-install.packages("xlsx")
-library("xlsx")
 
-install.packages("WriteXLS")
-library(WriteXLS)
 
 install.packages("writexl")
 library(writexl)
